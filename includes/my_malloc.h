@@ -10,10 +10,14 @@
     #include <stdlib.h>
     #include <stdbool.h>
 
-typedef struct struct_metadata_s {
+void *my_malloc(size_t size);
+
+struct metadata {
     size_t size;
-    struct heap_s *next;
+    struct metadata *next;
     bool free;
-} struct_metadata_t;
+};
+
+struct metadata *meta = NULL;
 
 #endif /* !MALLOC_H_ */

@@ -13,7 +13,7 @@ OBJ		=	$(MAIN:.c=.o) $(SRC:.c=.o)
 
 NAME	=	my_malloc
 
-CFLAGS	=	-Wall -Wextra
+CFLAGS	=	-Wall -Wextra -g3
 CPPFLAGS=	-iquote./includes
 
 all:	$(NAME)

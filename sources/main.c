@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "my_malloc.h"
 
 int main(int argc, char *argv[])
 {
