@@ -7,14 +7,14 @@
 
 MAIN	=	sources/main.c 		\
 
-SRC		=
+SRC		=	sources/my_malloc.c \
 
 OBJ		=	$(MAIN:.c=.o) $(SRC:.c=.o)
 
 NAME	=	my_malloc
 
 CFLAGS	=	-Wall -Wextra
-CPPFLAGS=	-iquote./include
+CPPFLAGS=	-iquote./includes
 
 all:	$(NAME)
 
